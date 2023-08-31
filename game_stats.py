@@ -1,3 +1,6 @@
+import json
+
+
 class GameStats:
     """Track statistics for Alien Invasion."""
 
@@ -9,8 +12,12 @@ class GameStats:
         # Start Alien Invasion in an inactive state.
         self.game_active = False
 
-        # High score should never be reset.
-        self.high_score = 0
+        # High score should never be reset/stored in high_score.json.
+        filename = 'high_score.json'
+        with open(filename) as f:
+            h_score = json.load(f)
+
+        self.high_score = h_score
 
     def reset_stats(self):
         """Initialize statistics that can change during the game."""

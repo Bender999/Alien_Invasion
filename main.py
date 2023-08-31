@@ -2,6 +2,7 @@ import sys
 from time import sleep
 
 import pygame
+import json
 
 from settings import Settings
 from game_stats import GameStats
@@ -52,6 +53,9 @@ class AlienInvasion:
         """Respond to key presses and mouse events."""
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
+                # Stores high score before exiting in high_score.json
+                with open('high_score.json', 'w') as f:
+                    json.dump(self.stats.high_score, f)
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 self._check_keydown_events(event)
