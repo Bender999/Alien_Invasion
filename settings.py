@@ -9,7 +9,7 @@ class Settings:
         self.bg_color = (230, 230, 230)
 
         # Ship settings:
-        self.ship_limit = 0
+        self.ship_limit = 3
 
         # Bullet settings
         self.bullet_width = 3
@@ -47,7 +47,7 @@ class Settings:
         self.alien_speed *= self.speedup_scale
 
         self.alien_points = int(self.alien_points * self.score_scale)
-        print(self.alien_points)
+        #print(self.alien_points)
 
 
 
