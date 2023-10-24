@@ -1,78 +1,58 @@
-# Alien_Invasion
-Alien Invasion game programmed with Python in PyGame
-Alien Invasion Game
-Description
-Alien Invasion is a 2D arcade game built using Python and Pygame. 
-The player controls a spaceship that has to defend Earth from waves of aliens. Eliminate all the aliens to proceed to the next level!
+# Alien Invasion Game
 
-Table of Contents Features
+## Overview
 
-Installation
+Alien Invasion is a 2D shooting game built with Python's Pygame library. The player controls a spaceship that can move horizontally and shoot bullets upward. The goal is to shoot down a fleet of aliens invading from the top of the screen.
 
-Usage
+## Features
+- Horizontally movable spaceship controlled by arrow keys.
+- Ability to shoot bullets with spacebar.
+- Fleets of aliens that drop down and change direction.
+- Scoring system with high-score tracking.
+- Levels of increasing difficulty.
 
-Controls
+## Requirements
+- Python 3.x
+- Pygame
+- json (for storing high score)
 
-Contribution
+## Installation
 
-Credits
+1. Clone this repository.
+   ```
+   git clone https://github.com/YourUsername/AlienInvasion.git
+   ```
+2. Install Pygame.
+   ```
+   pip install pygame
+   ```
 
-Features multiple levels with increasing difficulty, High-score leaderboard.
+## Running the Game
 
-Installation
-Requirements
-Python 3.x
-Pygame
-Steps
-Clone the repository:
-
-bash
-Copy code
-
-git clone https://github.com/YourUsername/Alien_Invasion.git
-Navigate into the project directory:
-
-bash
-Copy code
-
-
-cd Alien_Invasion
-
-
-Install the required packages:
-
-
-bash
-Copy code
-
-p
-ip install -r requirements.txt
-
-Run the game:
-Bash
-Copy code
-
+Navigate to the directory where the game is located and run:
+```
 python main.py
+```
 
-Usage To play the game, run the following command in the project directory:
+## Gameplay Controls
 
-bash
-Copy code
+- **Right Arrow**: Move spaceship to the right.
+- **Left Arrow**: Move spaceship to the left.
+- **Spacebar**: Shoot bullets.
+- **Q**: Quit the game.
 
-python main.py
+## Files
 
-Controls
+- `main.py`: Main driver of the game.
+- `settings.py`: Contains settings for the game like screen size, bullet speed, etc.
+- `game_stats.py`: Keeps track of game statistics.
+- `scoreboard.py`: Handles the game's scoring system.
+- `button.py`: For creating buttons in the game.
+- `ship.py`: Contains the Ship class.
+- `bullet.py`: Contains the Bullet class.
+- `alien.py`: Contains the Alien class.
 
-Arrow Keys: Move spaceship
+## Future Enhancements
 
-Spacebar: Shoot
-
-Esc: Pause/Resume
-
-Contribution
-If you want to contribute to this project, please follow the Contribution Guidelines.
-
-Credits
-Developed by Omar. Special thanks to Python Crash Course.
-
-Save the above content in your README.md file and commit the changes. Feel free to customize each section based on your project's specific details. Once you've edited the README, you can stage, commit, and push the changes to GitHub just like you would with any other file.
+- Add power-ups.
+- Implement multiplayer functionality.
